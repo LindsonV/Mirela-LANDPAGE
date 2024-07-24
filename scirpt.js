@@ -1,3 +1,5 @@
+/* _______CARROSSEL_________ */
+
 const imgs = document.getElementById("img");
 const img = document.querySelectorAll("#img img");
 
@@ -12,5 +14,4 @@ function carrossel() {
 
   imgs.style.transform = `translateX(${-index * 500}px)`;
 }
-
 setInterval(carrossel, 1800);

@@ -8,11 +8,11 @@
 .container-pg-1 {
     width: 100%;
     height: 100vh;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 200px;
-
 }
 
 .header {
@@ -43,11 +43,13 @@
 }
 
 .logo {
-    height: 450px;
+    max-width: 450px;
+    height: auto;
 }
 
-.mirela-front {
-    height: 700px;
+.mirela-front{
+    max-width: 500px;
+    height: auto;
     display: flex;
     border-radius: 50%;
     border: 3px solid #B2876D;
@@ -74,30 +76,20 @@ button {
 
 .container-1 button:hover {
     opacity: 0.5;
-    color: gray;
+    color: #ccc;
     transition: 0.5s;
 }
 
 
-.container-video {
-    position: fixed;
-    top: 0;
-    z-index: -1;
-}
 
+/*   _____________________________PAGINA 02 _______________________________*/
 .container-pg-2 {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 80px;
-}
-
-h2 {
-    color: #ECCEB4;
-    font-size: 16px;
-    font-weight: 200;
+    ;
 }
 
 .paragrafo-texto {
@@ -111,18 +103,11 @@ h2 {
     height: auto;
 }
 
-#sobre-min {
-    padding-top: 100px;
-}
-
-.container-apresetação {
-    margin-right: 20px;
-}
-
 
 .container-apresetação {
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
 }
 
 .carrossel {
@@ -144,6 +129,13 @@ h2 {
     border: 2px solid #B2876D;
 }
 
+/*   _____________________________PAGINA 03 _______________________________*/
+h2, h3{
+    align-items: center;
+    color: #ECCEB4;
+    font-size: 20px;
+    font-weight: 400
+}
 .ccontainer-pg-3 {
     width: 100%;
     height: 100vh;
@@ -155,13 +147,6 @@ h2 {
     margin-bottom: 50px;
     font-weight: 400;
     font-size: 25px;
-}
-
-h3 {
-    align-items: center;
-    color: #ECCEB4;
-    font-size: 20px;
-    font-weight: 400
 }
 
 .cards {
@@ -182,7 +167,8 @@ h3 {
 
 .card-1,
 .card-2,
-.card-3 {
+.card-3 
+{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,7 +192,7 @@ h3 {
 
 footer {
     margin-top: 30px;
-    background-color: #333;
+    background-color: #202020;
     color: #ECCEB4;
     text-align: center;
     padding: 20px;
@@ -219,17 +205,25 @@ footer a {
     text-decoration: none;
     margin: 0 10px;
 }
+footer p{
+    color: #ECCEB4;
+    font-weight: 200;
+}
+
 
 .icon-footer {
     width: 30px;
 }
 
-/* BACKGROUND */
+/* ________________________________BACKGROUND_____________________________ */
+
+
 video {
     min-height: 100%;
     min-width: 100%;
     position: fixed;
     top: 0;
+    z-index: -1;
 }
 
 .mascara {
@@ -238,7 +232,9 @@ video {
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7));
     position: fixed;
     top: 0;
+    z-index: -1;
 }
+
 
 .link-whtasapp {
     height: 50px;
@@ -246,9 +242,11 @@ video {
     right: 20px;
     bottom: 20px;
 }
+#foto-color{
+    display: none;
+}
 
-
-/* SCROLL */
+/*_______________________________ SCROLLreveall _______________________________*/
 
 .efeito-txt-topo,
 .efeito-img-topo,
@@ -263,4 +261,98 @@ video {
 
 html {
     scroll-behavior: smooth;
+}
+
+.navigation{
+    display: none;
+}
+/*   _____________________________ RESPONSIVO _______________________________*/
+@media (max-width: 1400px) {
+   
+    .container-1 {
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-pg-1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-botton: 
+    }
+    .mirela-front{
+        display: none;
+    }
+    h1{
+        font-size: 15px;
+        text-align: center;
+    }
+ 
+    .link-whtasapp{
+        display: none;
+    }
+/*______________pagina 02_________________*/
+.container-pg-2{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    gap: 30px
+    ;
+}
+
+.paragrafo-texto  {
+    font-size: 14px;    
+    text-align:center;
+}
+
+.navigation{
+    display: none;
+}
+}
+
+@media (max-width: 1010px) {
+.cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+}
+@media (max-width: 850px) {
+    .logo{
+        width: 350px;
+    }
+    .header{
+        height: 60px;
+    }
+    .header a{
+        font-size: 13px;
+    }
+/*______________pagina 02_________*/
+
+.paragrafo-texto{
+    width: auto;
+}
+.container-apresetação{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px 0px 0px 50px
+}
+.carrossel{
+    display: none;
+}
+#foto-color{
+    display: flex;
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 50%;
+    border: 2px solid #B2876D;
+}
+.cards{
+    width: 50%;
+}
 }
