@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="revel.js" defer></script>
+    <script src="reveall.js" defer></script>
+    
     <link rel="stylesheet" href="./style.css" />
     <title>Mirela Lima</title>
   </head>
@@ -20,7 +22,6 @@
       <a href="#sobre-min">Sobre Mim</a>
       <a href="#nossos-produtos">Nossos Produtos</a>
     </div>
-
     <div class="container-pg-1">
       <div class="container-1 efeito-txt-topo">
         <img class="logo" src="./assets/lofo frront.png" alt="logo" />
@@ -42,8 +43,8 @@
       <a href="https://api.whatsapp.com/send?phone=558198774098&text=Oi!%20Vim%20pelo%20seu%20site.%0AQuero%20tirar%20uma%20duvida!"> <img class="link-whtasapp" src="./assets/whatsapp.png" />
     </a>
  
-    <!-- ______________pagina 2_____________-->
-      
+    <!-- _____________________pagina 2___________________________________-->
+    
     
     
     <div class="container-pg-2" id="sobre-min">
@@ -57,18 +58,14 @@
           tipos de coberturas: Chantininho e ganache. Certamente são coberturas
           que irão te surpreender.
         </p>
-        <img id="foto-color" src="./assets2/428638353_18088740823413572_5308088430231277563_n.jpg" alt="">
+        <img id="foto-color" src="./assets2/familiaaa 1.jpg" alt="">
       </div>
       
       <div class="carrossel efeito-img-pg2">
         <div class="container-img" id="img">
-          <img class="img-c" src="./assets2/mirela.jpg" alt="mirela-lima" />
-          <img
-            class="img-c"
-            src="./assets2/irmães 111.jpg"
-            alt="mirela-irmãs"
-          />
-          <img class="img-c" src="./assets2/family.jpg" alt="mirela-familia" />
+          <img class="img-c" src="./assets2/mirela so.jpg" alt="mirela-lima" />
+          <img class="img-c" src="./assets2/familiaaa 1.jpg" alt="mirela-irmãs" />
+          <img class="img-c" src="./assets2/mirelaemathias.jpg" alt="mirela-familia" />
         </div>
       </div>
     </div>
@@ -80,55 +77,39 @@
 
 <h2 class="title efeito-txt-pg3" id="nossos-produtos"> Nossos Produtos</h2>
 
-<div class="cards-container" >
-    <div class="cards">
-        <div class="card-1 card efeito-card-1">
-          <div class="img-cards">
-             <img class="img-card" src="./assets3/bolo.jpg" alt="produto-bolo" />
-          </div>
-          <h3>Bolos</h3>
-          <div class="text-pg-3">
-      <br />
-      <p class="paragrafo-texto-pg-3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
-        consequuntur eos ea quo? Eveniet ipsum magnam expedita velit, quas
-        excepturi exercitationem quidem maiores. Ipsum, eveniet culpa maxime
-        tempore similique quasi.
-      </p>
+<div class="container-pg3" >
+  <div class="card">
+  <a href="#" class="prev" onclick="addSlides(-1)">
+    <span>&#10094</span>
+    <span class="prev-text"> Voltar </span>
+</a>
+<div>
+    <div class="slides fade">
+        <img class="img-card" src="./assets3/bolo.jpg" alt="bolos" >
+        <h3 class="title">Bolos</h3>
+        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, amet.</p>
     </div>
+    <div class="slides fade">
+        <img class="img-card" src="./assets3/macarons.jpg" alt="macarrons" >
+        <h3 class="title">Macarons</h3>
+        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, amet.</p>
     </div>
-    <div class="card-2 card efeito-card-2">
-      <div class="img-cards">
-      <img class="img-card" src="./assets3/macarons.jpg" alt="produto-macarons" />
-      </div>
-      <h3>Macarons</h3>
-      <div class="text-pg-3">
-      <br />
-      <p class="paragrafo-texto-pg-3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
-        consequuntur eos ea quo? Eveniet ipsum magnam expedita velit, quas
-        excepturi exercitationem quidem maiores. Ipsum, eveniet culpa maxime
-        tempore similique quasi.
-      </p>
+    <div class="slides fade">
+        <img class="img-card" src="./assets3/doces.jpg" alt="brigadeiros" >
+        <h3 class="title">Brigadeiros</h3>
+        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, amet.</p>
     </div>
-    </div>
-    <div class="card-3 card efeito-card-3">
-      <div class="img-cards">
-        <img class="img-card" src="./assets3/doces.jpg" alt="produto-doces" />
-      </div>
-      <h3>Brigadeiros</h3>
-      <div class="text-pg-3">
-    
-      <br />
-      <p class="paragrafo-texto-pg-3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
-        consequuntur eos ea quo? Eveniet ipsum magnam expedita velit, quas
-        excepturi exercitationem quidem maiores. Ipsum, eveniet culpa maxime
-        tempore similique quasi.
-      </p>
-    </div>
-    </div>
-    </div>
+</div>
+<div class="footer">
+    <button class="button" onclick="addSlides(1)">Próximo</button>
+  <div class="dot-box">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+ </div>
+</div>
+</div>
+</div>
   </div>
   
   <footer>
@@ -141,10 +122,10 @@
 </footer>
     
 
-
+<script src="./slides.js"></script>
 <script src="./scirpt.js"></script>
-<script src="./slider.js"></script>
-  
+
+
   </body>
 
 </html>

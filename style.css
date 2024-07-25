@@ -130,66 +130,124 @@ button {
 }
 
 /*   _____________________________PAGINA 03 _______________________________*/
-h2, h3{
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    color: #ECCEB4;
-    font-size: 20px;
-    font-weight: 400
-}
-.ccontainer-pg-3 {
-    width: 100%;
-    height: 100vh;
-    display: flex;
+    background-color: #202020;
+    width: 400px;
+    height: 600px;
+    padding: 32px;
+    border-radius: 32px;
 }
 
-.title {
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: 400;
-    font-size: 25px;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 40px;
-}
-
-.cards img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
-    border: 2px solid #B2876D;
-}
-
-.card-1,
-.card-2,
-.card-3 
-{
-    display: flex;
+.slides{
+    gap:8px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #202020;
-    width: 300px;
-    height: 500px;
-    border-radius: 15px;
-    margin-bottom: 60px;
-
 }
 
-.paragrafo-texto-pg-3 {
-    color: #ECCEB4;
-    font-size: 15px;
-    font-weight: 200;
+.container-pg3{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    color: #B2876D;
+    text-decoration: none;
+}
+
+.prev-text{
+    margin-top: 4px;;
+}
+
+.title{
+    font-size: 28px;
+    width: 100%;
+    font-weight: bold;
     text-align: center;
-    padding: 6px;
+}
+
+.content{
+    width: 200px;
+    align-items: center;
+    color: #ECCEB4;
 
 }
 
+h2{
+    color: #B2876D;
+        font-weight: 400;
+}
+
+.img-card{
+    width: auto;
+    height: 160px;
+    border-radius: 50% ;
+    border: 2px solid #B2876D;
+}
+h3{
+    color: #ECCEB4;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.button{
+    background-color: #B2876D;
+    color: #fafafa;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 999px;
+}
+
+.dot-box{
+    text-align: center;
+}
+
+.dot{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 2px;
+    background-color: #c1c1c1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color .6s ease;
+}
+
+.active, .dot:hover{
+    background-color: #B2876D;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration:1.5s ;
+}
+
+@keyframes fade{
+    from {opacity: .2}
+    to {opacity: 1}
+}
+/*_________________________________ footer ____________________________________________*/
 footer {
     margin-top: 30px;
     background-color: #202020;
@@ -215,7 +273,7 @@ footer p{
     width: 30px;
 }
 
-/* ________________________________BACKGROUND_____________________________ */
+/* ________________________________BACKGROUND______________________________________ */
 
 
 video {
@@ -267,7 +325,7 @@ html {
     display: none;
 }
 /*   _____________________________ RESPONSIVO _______________________________*/
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
    
     .container-1 {
         display: flex;
@@ -279,7 +337,7 @@ html {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-botton: 
+       
     }
     .mirela-front{
         display: none;
@@ -292,7 +350,7 @@ html {
     .link-whtasapp{
         display: none;
     }
-/*______________pagina 02_________________*/
+/*_____________________________________pagina 02_________________________*/
 .container-pg-2{
     display: flex;
     flex-direction:column ;
@@ -312,14 +370,14 @@ html {
 }
 }
 
-@media (max-width: 1010px) {
+@media screen and  (max-width: 1010px) {
 .cards{
     display: flex;
     justify-content: space-between;
     gap: 2px;
 }
 }
-@media (max-width: 850px) {
+@media screen and  (max-width: 850px) {
     .logo{
         width: 350px;
     }
@@ -329,7 +387,7 @@ html {
     .header a{
         font-size: 13px;
     }
-/*______________pagina 02_________*/
+/*_________________________________pagina 02____________________________________*/
 
 .paragrafo-texto{
     width: auto;
@@ -345,6 +403,7 @@ html {
 .carrossel{
     display: none;
 }
+
 #foto-color{
     display: flex;
     max-width: 100%;
