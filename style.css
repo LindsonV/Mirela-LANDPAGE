@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
+body{
+    overflow-x: hidden;
+}
 .container-pg-1 {
     width: 100%;
     height: 100vh;
@@ -413,5 +415,11 @@ html {
 }
 .cards{
     width: 50%;
+}
+/*___________________________________pgina 03_________________________________*/
+
+.card{
+    width: 350px;
+    height: 550px;
 }
 }

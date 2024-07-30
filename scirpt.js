@@ -1,18 +1,18 @@
-/* _______CARROSSEL_________ */
+/* _______CARROSSEL pg02_________ */
 
 const imgs = document.getElementById("img");
 const img = document.querySelectorAll("#img img");
 
-let index = 0;
+let indexCards = 0;
 
 function carrossel() {
-  index++;
+  indexCards++;
 
-  if (index > img.length - 1) {
-    index = 0;
+  if (indexCards > img.length - 1) {
+    indexCards = 0;
   }
 
-  imgs.style.transform = `translateX(${-index * 500}px)`;
+  imgs.style.transform = `translateX(${-indexCards * 500}px)`;
 }
 setInterval(carrossel, 1800);
 

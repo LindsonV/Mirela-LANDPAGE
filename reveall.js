@@ -41,7 +41,7 @@ revel.reveal('.efeito-card-1', {
     duration: 2000,
     distance: '90px',
     delay: 500,
-    origin: 'top'
+    origin: 'bottom'
 })
 revel.reveal('.efeito-card-2', {
     duration: 2000,
