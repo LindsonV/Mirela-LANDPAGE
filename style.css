@@ -75,6 +75,9 @@ button {
     font-weight: bold;
     margin-top: 30px;
 }
+.cardapio{
+    margin-left: 10px;
+}
 
 .container-1 button:hover {
     opacity: 0.5;
@@ -380,7 +383,12 @@ html {
 }
 }
 @media screen and  (max-width: 850px) {
+    body{
+        overflow-x: hidden;
+    }
+    
     .logo{
+        margin-top: -150px;
         width: 350px;
     }
     .header{
@@ -420,6 +428,6 @@ html {
 
 .card{
     width: 350px;
-    height: 550px;
+    height: 570px;
 }
 }
