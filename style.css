@@ -158,7 +158,7 @@ button {
 
 .container-pg3{
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -428,10 +428,26 @@ html {
 
 .card{
     width: 350px;
-    height: 570px;
+    height: 560px;
+    margin-bottom:10px;
+
 }
 #nossos-produtos{
     display: none;
+}
+video{
+    display: none;
+}
+footer{
+    height: 65px;
+    margin-top: 20px;
+}
+.icon-footer{
+    width: 25px;
+}
+footer p{
+    font-size: 10px;
+
 }
 
 }
