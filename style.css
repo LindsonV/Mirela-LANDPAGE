@@ -136,6 +136,13 @@ button {
 
 /*   _____________________________PAGINA 03 _______________________________*/
 
+.container-pg3{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .card{
     display: flex;
@@ -156,13 +163,7 @@ button {
     align-items: center;
 }
 
-.container-pg3{
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .prev{
     display: flex;
@@ -439,7 +440,7 @@ video{
     display: none;
 }
 footer{
-    height: 65px;
+    height: 75px;
     margin-top: 20px;
 }
 .icon-footer{
@@ -448,6 +449,9 @@ footer{
 footer p{
     font-size: 10px;
 
+}
+.footer p{
+    margin-bottom: 10px;
 }
 
 }
