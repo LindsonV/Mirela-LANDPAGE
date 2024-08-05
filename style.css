@@ -138,7 +138,7 @@ button {
 
 .container-pg3{
     width: 100%;
-    height: 75vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,11 +209,7 @@ h3{
     font-weight: 400;
 }
 
-.footer{
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-}
+
 .button{
     background-color: #B2876D;
     color: #fafafa;
@@ -255,13 +251,11 @@ h3{
 }
 /*_________________________________ footer ____________________________________________*/
 footer {
-    margin-top: 30px;
     background-color: #202020;
     color: #ECCEB4;
     text-align: center;
-    padding: 20px;
-    bottom: 0;
     width: 100%;
+    height: 100px;
 }
 
 footer a {
@@ -274,10 +268,11 @@ footer p{
     font-weight: 200;
 }
 
-
 .icon-footer {
+    margin-top: 15px;
     width: 30px;
 }
+
 
 /* ________________________________BACKGROUND______________________________________ */
 
@@ -430,8 +425,9 @@ html {
 .card{
     width: 350px;
     height: 560px;
-    margin-bottom:10px;
-
+}
+.button{
+    margin-bottom: 10px;
 }
 #nossos-produtos{
     display: none;
@@ -454,4 +450,7 @@ footer p{
     margin-bottom: 10px;
 }
 
+.header a:hover {
+    font-size: 13px;
+}
 }
