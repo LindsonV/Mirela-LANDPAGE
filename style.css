@@ -163,8 +163,6 @@ button {
     align-items: center;
 }
 
-
-
 .prev{
     display: flex;
     align-items: center;
@@ -223,6 +221,7 @@ h3{
 
 .dot-box{
     text-align: center;
+    margin-top: 15px;
 }
 
 .dot{
@@ -426,9 +425,7 @@ html {
     width: 350px;
     height: 560px;
 }
-.button{
-    margin-bottom: 10px;
-}
+
 #nossos-produtos{
     display: none;
 }
